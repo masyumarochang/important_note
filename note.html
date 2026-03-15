@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メモ帳</title>
+    <link rel="stylesheet" href="note.css">
+</head>
+<body>
+    <h1>*3/16*</h1>
+    <div class="warning">
+        このページは重い内容が書かれてるよ！<br>
+        読むのがしんどかったら、ブラウザバックしてね！<br>
+        私は強欲なので、読んだ後はできれば報告が欲しい！<br><br>
+        <button id="morewarningbtn">具体的にはどんなことが書いてあるの？</button>
+        <p id="morewarning"></p>
+    </div>
+
+    <p>
+        気持ちの整理も兼ねて書いてるよ<br>
+        深夜の殴り書きみたいな部分もあるから、<br>
+        これがお前の本当の気持ちか!?と呼んでくれたらHappy
+    </p>
+    
+    <button class="reveal-btn" onclick="reveal('part2',this)">
+        本文を読む
+    </button>
+    
+    <div id="part2" class="hidden">
+
+        <hr>
+
+        <p>
+            最近、死について考える時間が増えていて、<br>
+            具体的な日時とかまで考え出してる。やばい。
+        </p>
+        <p>
+            ただ、解決してほしいとか責任を感じてほしいわけじゃないし、<br>
+            今こう思ってるんだー。って知ってはほしいなって思ってる。
+        </p>
+
+        <button class="reveal-btn" onclick="reveal('part3',this)">
+            続きを読む
+        </button>
+    </div>
+
+    <div id="part3" class="hidden">
+
+        <hr>
+        <p>
+            言いたいことはわかる！<br>
+            「自力で戻るとかしてるけどあーた本当に死ぬ気あるの?」とか<br>
+            「死ぬ死ぬ詐欺かな?」とか思う気持ちはわかる。すごくよくわかる。<br>
+            けど、気持ちは本物だから、成功したら近いうちにいなくなるよってこと。<br>
+        </p>
+        <p>
+            それだけはわかってほしい。<br>
+            ただ心配させたくて言ってるってことはないよってこと！<br>
+        </p>
+        <button class="reveal-btn" onclick="reveal('part4',this)">
+            最後まで読む
+        </button>
+    </div>
+    
+    <div id="part4" class="hidden">
+        <hr>
+        <p>戻ってきたら「おかえり」って言ってね</p>
+        <p>
+            私が自分で終わらせる日まで、傍にいてくれると幸せだな<br>
+            まだ大好きでごめんね
+        </p>
+        <p class="end">
+            ここまで読んでくれてありがとう。木曜日一緒に歩けるの楽しみにしてるね。
+        </p>
+    </div>
+
+    <script src="note.js"></script>
+</body>
+</html>
